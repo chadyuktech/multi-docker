@@ -11,7 +11,7 @@ script:
 
 after_success:
   - docker build -t chadyuk/multi-client ./client
-  - docker build -t chayduk/multi-nginx ./nginx
+  - docker build -t chadyuk/multi-nginx ./nginx
   - docker build -t chadyuk/multi-server ./server
   - docker build -t chadyuk/multi-worker ./worker
   # Login into the Docker CLI
